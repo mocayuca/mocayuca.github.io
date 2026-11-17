@@ -1,78 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js" defer></script>
-	<title>ポートフォリオ公開サイト</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mocayucaのポートフォリオサイトです。学習した技術や制作した作品を紹介しています。">
+
+    <title>Mocayuca | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-	<h1>About Me</h1>
-	<h2 class="reveal">Introduce</h2>
-	<p>
-		エンジニアを目指して職業訓練校で勉強中です✍<br>
-		現在4か月目で、Java、SQL（MySQL）、Webアプリケーション(HTML、CSS、JavaScript、JSPサーブレット)、
-		Git、GitHubの使い方を学びました。<br>
-		このページでは学んだことを生かして作成したポートフォリオを公開しています。
-	</p>
-	<h2 class="reveal">Skills</h2>
-		<p>
-			Java、SQL（MySQL）、Webアプリケーション(HTML、CSS、JavaScript、JSPサーブレット)、Git、GitHub<br>
-		</p>
 
-	<h2 class="reveal">Portfolio</h2>
-	<div class="portfolio-grid">
-	    <!-- 作品1：portfolio03 -->
-	    <article class="portfolio-card reveal">
-	        <div class="portfolio-image">
-	            <span>PROJECT 01</span>
-	        </div>
-	        <div class="portfolio-content">
-	            <h3>portfolio03</h3>
-	            <p class="portfolio-description">
-	                学習成果として制作している
-	                ポートフォリオプロジェクトです。
-	            </p>
-	            <div class="portfolio-tags">
-	                <span>GitHub</span>
-	                <span>Portfolio</span>
-	            </div>
-	            <a class="portfolio-link"
-	               href="https://github.com/mocayuca/portfolio03"
-	               target="_blank"
-	               rel="noopener noreferrer">
-	                GitHubで見る →
-	            </a>
-	        </div>
-	    </article>
+    <div class="page-shell">
 
-	    <!-- 作品2：今後追加予定 -->
-	    <article class="portfolio-card reveal">
-	        <div class="portfolio-image portfolio-image-next">
-	            <span>COMING SOON</span>
-	        </div>
-	        <div class="portfolio-content">
-	            <h3>次の制作物</h3>
-	            <p class="portfolio-description">
-	                新しく制作したアプリケーションを
-	                ここに追加する予定です。
-	            </p>
-	            <div class="portfolio-tags">
-	                <span>Coming Soon</span>
-	            </div>
-	        </div>
-	    </article>
-	</div>
-	
-	<h2 class="reveal">Adress</h2>
-		<p>🌷🌻🌼🥀🌺@xxx.com</p>
-	
-	<button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
-		🌙 ダークモード
-	</button>
+        <!-- ヘッダー -->
+        <header class="site-header">
+            <a href="#" class="logo">✧ Mocayuca</a>
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-pressed="false"
+            >
+                🌙 Dark Mode
+            </button>
+        </header>
+
+        <main>
+
+            <!-- メインビジュアル -->
+            <section class="hero">
+                <p class="hero-label">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Mocayuca</h1>
+
+                <p class="hero-description">
+                    Creating little things with code<br>
+                    under the dreamy galaxy.
+                </p>
+
+                <a href="#portfolio" class="hero-button">
+                    View My Works <span>↓</span>
+                </a>
+
+                <div class="hero-decoration">✦</div>
+            </section>
+
+            <!-- 自己紹介 -->
+            <section class="section reveal" id="about">
+                <div class="section-heading">
+                    <span class="section-number">01 / ABOUT</span>
+                    <h2>Introduce</h2>
+                    <p>はじめまして。私について紹介します。</p>
+                </div>
+
+                <div class="glass-card profile-card">
+                    <div class="profile-icon">🌷</div>
+
+                    <div class="profile-text">
+                        <h3>Nice to meet you!</h3>
+
+                        <p>
+                            エンジニアを目指して職業訓練校で勉強中です。
+                            現在4か月目で、Java、SQL（MySQL）、
+                            Webアプリケーション（HTML、CSS、JavaScript、JSP・Servlet）、
+                            Git、GitHubの使い方を学びました。
+                        </p>
+
+                        <p>
+                            このページでは、学んだことを生かして
+                            作成したポートフォリオを公開しています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スキル -->
+            <section class="section reveal" id="skills">
+                <div class="section-heading">
+                    <span class="section-number">02 / SKILLS</span>
+                    <h2>My Skills</h2>
+                    <p>学習してきた技術</p>
+                </div>
+
+                <div class="skill-list">
+                    <span class="skill-tag">☕ Java</span>
+                    <span class="skill-tag">✧ SQL(MySQL)</span>
+                    <span class="skill-tag">🌐 HTML</span>
+                    <span class="skill-tag">🎨 CSS</span>
+                    <span class="skill-tag">✨ JavaScript</span>
+                    <span class="skill-tag">☁️ JSP / Servlet</span>
+                    <span class="skill-tag">🌱 Git</span>
+                    <span class="skill-tag">💻 GitHub</span>
+                </div>
+            </section>
+
+            <!-- 作品 -->
+            <section class="section reveal" id="portfolio">
+                <div class="section-heading">
+                    <span class="section-number">03 / PORTFOLIO</span>
+                    <h2>My Works</h2>
+                    <p>これまでに制作した作品</p>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <!-- 作品1 -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-image">
+                            <span class="project-number">PROJECT 01</span>
+                            <span class="project-symbol">✧</span>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="project-category">WEB DESIGN</span>
+
+                            <h3>portfolio03</h3>
+
+                            <p class="portfolio-description">
+                                学習成果として制作している
+                                ポートフォリオプロジェクトです。
+                            </p>
+
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>GitHub</span>
+                            </div>
+
+                            <a
+                                class="portfolio-link"
+                                href="https://github.com/mocayuca/portfolio03"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View on GitHub <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 作品2 -->
+                    <article class="portfolio-card coming-card">
+                        <div class="portfolio-image">
+                            <span class="project-number">PROJECT 02</span>
+                            <span class="project-symbol">🌙</span>
+                        </div>
+
+                        <div class="portfolio-content">
+                            <span class="project-category">COMING SOON</span>
+
+                            <h3>Next Project</h3>
+
+                            <p class="portfolio-description">
+                                新しく制作したアプリケーションを
+                                ここに追加する予定です。
+                            </p>
+
+                            <div class="portfolio-tags">
+                                <span>Coming Soon</span>
+                            </div>
+
+                            <span class="coming-text">
+                                ✧ Under construction
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- 趣味 -->
+            <section class="section reveal" id="hobby">
+                <div class="section-heading">
+                    <span class="section-number">04 / HOBBY</span>
+                    <h2>My Favorites</h2>
+                    <p>好きなこと・趣味</p>
+                </div>
+
+                <div class="hobby-grid">
+                    <div class="hobby-card">
+                        <span>🧶</span>
+                        <p>編み物</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <span>🎬</span>
+                        <p>映画鑑賞</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <span>🎮</span>
+                        <p>PCゲーム</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 連絡先 -->
+            <section class="section reveal" id="contact">
+                <div class="section-heading">
+                    <span class="section-number">05 / CONTACT</span>
+                    <h2>Contact</h2>
+                    <p>Thank you for visiting!</p>
+                </div>
+
+                <div class="glass-card contact-card">
+                    <span class="contact-flower">🌷</span>
+                    <p>お気軽にご連絡ください。</p>
+                    <a href="mailto:xxx@xxx.com">
+                        xxx@xxx.com
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer class="site-footer">
+            <p>✧ Made with love & little stars ✧</p>
+            <small>© 2026 Mocayuca Portfolio</small>
+        </footer>
+
+    </div>
+
 </body>
-
 </html>
