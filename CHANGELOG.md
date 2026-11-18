@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+### Changed
+- CSSの仕様変更
+- index.htmlの変更
+
 ## [v0.3.0] -2026-11-17
 
 ### Added
