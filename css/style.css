@@ -273,26 +273,30 @@ body::after {
 }
 
 .hero h1 {
-	margin: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
 
-	font-size: clamp(3.5rem, 9vw, 6rem);
-	font-weight: 800;
-	letter-spacing: 0.1em;
+    font-size: clamp(2.2rem, 9vw, 6rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
 
-	color: transparent;
+    color: transparent;
+    background: linear-gradient(120deg,
+        #a78bfa,
+        #f0a6d5,
+        #91bdf5);
 
-	background: linear-gradient(120deg,
-			#a78bfa,
-			#f0a6d5,
-			#91bdf5);
+    background-clip: text;
+    -webkit-background-clip: text;
 
-	background-clip: text;
-	-webkit-background-clip: text;
+    filter:
+        drop-shadow(0 5px 15px rgba(167, 139, 250, 0.25));
 
-	filter:
-		drop-shadow(0 5px 15px rgba(167, 139, 250, 0.25));
+    overflow-wrap: anywhere;
 }
-
 .hero-description {
 	margin: 20px 0 30px;
 
